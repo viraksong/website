@@ -1,0 +1,5 @@
+1- open cmd from this folder
+2- git add .
+3- git commit -m "type message"
+4- git push -u origin main 
+
