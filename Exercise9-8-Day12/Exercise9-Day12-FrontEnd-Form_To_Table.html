@@ -20,9 +20,9 @@
   </header>
   <main>
 
-    <div class="container-sm mt-3  " id="hideGrid">
+    <div class="container-sm mt-3 " id="hideGrid">
         <p class="h1">Subject Marks</p>
-
+        
             <div class="mb-3 row ">
                 <label for="Subject1id" class="col-4 col-form-label">Subject1:</label>
                 <div class="col-8">
@@ -57,7 +57,7 @@
     </div>
 
 
-    <div class="table-responsiv container " id="">
+    <div class="table-responsiv container " id="tbl" style="display: none;">
         <h1>Subject Marks and GPA</h1>
         <table class="table table-hover">
             <thead>
@@ -98,7 +98,8 @@
 
   <script>
     function hidefun(){
-        document.getElementById("hideGrid").style.display ="none";
+        document.getElementById("hideGrid").style ="display:none";
+        document.getElementById("tbl").style ="display:block";
     }
 
     function showfun(){
