@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+  <header>
+    <!-- place navbar here -->
+  </header>
+  <main>
+
+    <div class="container-sm mt-3  " id="hideGrid">
+        <p class="h1">Subject Marks</p>
+
+            <div class="mb-3 row ">
+                <label for="Subject1id" class="col-4 col-form-label">Subject1:</label>
+                <div class="col-8">
+                    <input type="text" class="form-control" name="Subject1id" id="Subject1id" placeholder="Name">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="Subject2id" class="col-4 col-form-label">Subject2:</label>
+                <div class="col-8">
+                    <input type="text" class="form-control" name="Subject2id" id="Subject2id" placeholder="Name">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="Subject3id" class="col-4 col-form-label">Subject3:</label>
+                <div class="col-8">
+                    <input type="text" class="form-control" name="Subject3id" id="Subject3id" placeholder="Name">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="Subject4id" class="col-4 col-form-label">Subject4:</label>
+                <div class="col-8">
+                    <input type="text" class="form-control" name="Subject4id" id="Subject4id" placeholder="Name">
+                </div>
+            </div>
+            
+            <div class="mb-3 row">
+                <div class="col-4 ">
+                    <button type="submit" class="btn btn-primary " onclick="showfun()">Submit</button>
+                </div>
+            </div>
+ 
+    </div>
+
+
+    <div class="table-responsiv container " id="">
+        <h1>Subject Marks and GPA</h1>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">Subject</th>
+                    <th scope="col">Marks</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="">
+                    <td scope="row">Subject1</td>
+                    <td id="dis1id"></td>
+                </tr>
+                <tr class="">
+                    <td scope="row">Subject2</td>
+                    <td id="dis2id"></td>
+                </tr>
+                <tr class="">
+                    <td scope="row">Subject3</td>
+                    <td id="dis3id"></td>
+                </tr>
+                <tr class="">
+                    <td scope="row">Subject4</td>
+                    <td id="dis4id"></td>
+                </tr>
+            </tbody>
+        </table>
+        <h1 class="h3" id="display"> </h1>
+    </div>
+    
+
+
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+
+  <script>
+    function hidefun(){
+        document.getElementById("hideGrid").style.display ="none";
+    }
+
+    function showfun(){
+        hidefun();
+        let txtname1 = document.getElementById("Subject1id").value;
+        document.getElementById("dis1id").textContent = txtname1;
+
+        let txtname2 = document.getElementById("Subject2id").value;
+        document.getElementById("dis2id").textContent = txtname2;
+
+        let txtname3 = document.getElementById("Subject3id").value;
+        document.getElementById("dis3id").textContent = txtname3;
+
+        let txtname4 = document.getElementById("Subject4id").value;
+        document.getElementById("dis4id").textContent = txtname4;
+
+        let gpa = (parseInt(txtname1)+parseInt(txtname2)+parseInt(txtname3)+parseInt(txtname4))/4;
+        document.getElementById("display").textContent=gpa;
+      
+    }
+
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
