@@ -26,31 +26,31 @@
             <div class="mb-3 row ">
                 <label for="Subject1id" class="col-4 col-form-label">Subject1:</label>
                 <div class="col-8">
-                    <input type="text" class="form-control" name="Subject1id" id="Subject1id" placeholder="Name">
+                    <input type="number" class="form-control" name="Subject1id" id="Subject1id" placeholder="number">
                 </div>
             </div>
             <div class="mb-3 row">
                 <label for="Subject2id" class="col-4 col-form-label">Subject2:</label>
                 <div class="col-8">
-                    <input type="text" class="form-control" name="Subject2id" id="Subject2id" placeholder="Name">
+                    <input type="number" class="form-control" name="Subject2id" id="Subject2id" placeholder="number">
                 </div>
             </div>
             <div class="mb-3 row">
                 <label for="Subject3id" class="col-4 col-form-label">Subject3:</label>
                 <div class="col-8">
-                    <input type="text" class="form-control" name="Subject3id" id="Subject3id" placeholder="Name">
+                    <input type="number" class="form-control" name="Subject3id" id="Subject3id" placeholder="number">
                 </div>
             </div>
             <div class="mb-3 row">
                 <label for="Subject4id" class="col-4 col-form-label">Subject4:</label>
                 <div class="col-8">
-                    <input type="text" class="form-control" name="Subject4id" id="Subject4id" placeholder="Name">
+                    <input type="number" class="form-control" name="Subject4id" id="Subject4id" placeholder="number">
                 </div>
             </div>
             
             <div class="mb-3 row">
                 <div class="col-4 ">
-                    <button type="submit" class="btn btn-primary " onclick="showfun()">Submit</button>
+                    <button type="number" class="btn btn-primary " onclick="showfun()">Submit</button>
                 </div>
             </div>
  
@@ -116,7 +116,7 @@
         let txtname4 = document.getElementById("Subject4id").value;
         document.getElementById("dis4id").textContent = txtname4;
 
-        let gpa = (parseInt(txtname1)+parseInt(txtname2)+parseInt(txtname3)+parseInt(txtname4))/4;
+        let gpa = ((parseInt(txtname1)+parseInt(txtname2)+parseInt(txtname3)+parseInt(txtname4))/(4*10));
         document.getElementById("display").textContent=gpa;
       
     }

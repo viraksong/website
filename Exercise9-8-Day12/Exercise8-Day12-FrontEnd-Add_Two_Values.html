@@ -21,24 +21,24 @@
 
 
     <div class="container mt-3 w-md-50">
-        <p class="h1">Subject Marks</p>
+        <p class="h1">Addition Form</p>
 
             <div class="mb-3 row row-cols-1 ">
                 <label for="EnterNumber1" class="col col-form-label">Enter Number 1:</label>
                 <div class="col">
-                    <input type="text" class="form-control" name="EnterNumber1" id="EnterNumber1" placeholder="Number">
+                    <input type="number" class="form-control" name="EnterNumber1" id="EnterNumber1" placeholder="Number">
                 </div>
                 <label for="EnterNumber2" class="col col-form-label">Enter Number 2:</label>
                 <div class="col">
-                    <input type="text" class="form-control" name="EnterNumber2" id="EnterNumber2" placeholder="Number">
+                    <input type="number" class="form-control" name="EnterNumber2" id="EnterNumber2" placeholder="Number">
                 </div>
                 <label for="result" class="col col-form-label">Result:</label>
                 <div class="col">
-                    <input type="text" class="form-control" name="result" id="result" placeholder="Result">
+                    <input type="number" class="form-control bg-white" name="result" id="result" placeholder="" disabled>
                 </div>
             </div>
-    
-            <button type="button" class="btn btn-primary " onclick="total()">Submit</button>
+            <button type="submit" class="btn btn-primary " onclick="reSet()">Clear</button>
+            <button type="submit" class="btn btn-primary " onclick="total()">Submit</button>
                 
     </div>
     
@@ -53,6 +53,11 @@
         let num2 = document.getElementById("EnterNumber2").value;
  
         document.getElementById("result").value=parseInt(num1)+parseInt(num2);
+    }
+    function reSet(){
+        document.getElementById("EnterNumber1").value="";
+        document.getElementById("EnterNumber2").value=""
+        document.getElementById("result").value =""
     }
   </script>
   <!-- Bootstrap JavaScript Libraries -->
