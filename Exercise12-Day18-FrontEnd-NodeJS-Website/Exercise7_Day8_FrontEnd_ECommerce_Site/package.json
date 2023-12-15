@@ -1,0 +1,15 @@
+{
+  "name": "exercise7_day8_frontend_ecommerce_site",
+  "version": "1.0.0",
+  "description": "E-Commerce-Site",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "author": "viraksong",
+  "license": "ISC",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

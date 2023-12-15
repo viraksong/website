@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <body>
+        <header>
+            <!-- place navbar here -->
+        </header>
+        <main>
+            
+        <!-- 
+            steps
+            1.input field/form for taking the information/zip form user and a button to submit
+            2. onclick even handler on the button, we call a JS function
+            3. in the async JS function, we make a fetch call using a wait
+            4 Once we get the info, send it to a function to display
+            5. try and catch in this display function
+            6. print to console the temp, get the empty div using id and display details in that div suing innerHTML or textContent  
+         -->
+         
+         
+         <div class="container m-auto mb-3">
+            <h1> Get Weather details</h1>
+            <div
+            class="row justify-content-center align-items-center g-2 "
+         >
+            <div class="col">
+                <label for="" class="form-label">Zip Code/City</label>
+                <input
+                    type="text"
+                    class="form-control"
+                    name=""
+                    id="zipcode"
+                    aria-describedby="helpId"
+                    placeholder=""
+                    
+                />
+            <small id="helpId" class="form-text text-muted">Enter Zip Code/City</small>
+            </div>
+            <div class="col">
+                <button
+                type="button"
+                name=""
+                id=""
+                class="btn btn-primary"
+                onclick="getWeather()"
+                >
+                    Search
+                </button>
+            </div>
+            <div class="col"></div>
+         </div>
+
+            
+            
+         </div>
+         <!-- <div class="d-grid gap-2">
+            
+         </div> -->
+         <div id="w" class="container m-auto"> Weather detials shoudl be display</div>
+         
+         <script src="Exercise11-Day16-FrontEnd-WeatherApp.js">
+
+         </script>
+         
+        </main>
+        <footer>
+            <!-- place footer here -->
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
