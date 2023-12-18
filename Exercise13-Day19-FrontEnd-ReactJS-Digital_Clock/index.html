@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- https://legacy.reactjs.org/docs/cdn-links.html -->
+    <!--The script tags have JavaScript libraries react.js and react-dom.js
+        React is a JavaScript library for building user interfaces, 
+        ReactDOM is specifically focused on rendering React components in the DOM -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    
+    <!-- java scrip compiler transforming modern JavaScript code, including JSX, 
+        into a format that can be executed in environments that might not support the latest ECMAScript features. -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    
+
+    
+    <h1> React's Virtual DOM-  Date-Time</h1>
+    <div id="root">  </div>
+
+    <script type="text/babel">
+        //speicfy a location by id="root" to be displayed
+        let root = ReactDOM.createRoot(document.getElementById('root'));     
+
+        //create function for current clock and render clock
+        let renderTime = () => {
+            //Create current clock and convert to string
+            let clock = new Date().toString();
+            let DigitClock = <p>{clock}</p>;
+            root.render(DigitClock);
+        };
+        
+       // for every 1s, call render time to update current clock. 
+        setInterval(renderTime,1000);
+    
+    </script>
+    
+</body>
+</html>
