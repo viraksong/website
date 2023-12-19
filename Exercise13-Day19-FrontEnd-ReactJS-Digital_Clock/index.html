@@ -21,20 +21,27 @@
 </head>
 <body>
     
-
+    <h1> Regular - Date-Time</h1>
+    <div id="regDiv"> Regular Div</div>
     
     <h1> React's Virtual DOM-  Date-Time</h1>
-    <div id="root">  </div>
+    <div id="reactDiv"> Rect Div </div>
 
     <script type="text/babel">
-        //speicfy a location by id="root" to be displayed
-        let root = ReactDOM.createRoot(document.getElementById('root'));     
+        // specify where data should be displayed for regDiv
+        let regDiv = document.getElementById("regDiv");
+
+        //specify a location by id="root" to be displayed
+        let root = ReactDOM.createRoot(document.getElementById('reactDiv'));     
 
         //create function for current clock and render clock
         let renderTime = () => {
+            //pass data to RegDiv
+            regDiv.innerHTML = `<div><input type="text"/><p>${ (new Date()) }</p></div>`;
+
             //Create current clock and convert to string
             let clock = new Date().toString();
-            let DigitClock = <p>{clock}</p>;
+            let DigitClock = <div><input type="text"/><p>{clock}</p></div>;
             root.render(DigitClock);
         };
         
