@@ -1,5 +1,7 @@
 
 import { Link } from "react-router-dom";
+
+
 const Navbar = () => {
     return ( 
         <div>
@@ -8,10 +10,12 @@ const Navbar = () => {
                     <Link to="/">
                         <img src="img/icons8-shopping-bag-100.png" alt="iconLog" className="w-50 rounded-circle bg-light"/>
                     </Link>
+                    
                     <button className="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
+                    
                     <div className="collapse navbar-collapse" id="collapsibleNavId">
                         <ul className="navbar-nav me-auto mt-2 mt-lg-0">
                             <li className="nav-item">
@@ -19,14 +23,15 @@ const Navbar = () => {
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="/about">About</Link>
-                            </li>
+                            </li> 
                             <li className="nav-item">
                                 <Link className="nav-link" to="/contact">Contact Us</Link>
                             </li>
                             <li className="nav-item">
-                            <Link className="nav-link" to="/products">Products</Link>
+                                <Link className="nav-link" to="/products">Products</Link>
                             </li>
-                        </ul>
+                            
+                        </ul>                    
                         <ul className="navbar-nav sm-auto mt-2 mt-lg-0">
                         {/* {<!-- login -->} */}
                         <li className="nav-item">
@@ -75,10 +80,10 @@ const Navbar = () => {
                                     </form>
                                 </div>
 
-                                <div className="modal-footer position-absolute bottom-0 start-50 translate-middle-x">
+                                {/* <div className="modal-footer position-absolute bottom-0 start-50 translate-middle-x"> */}
                                     {/* <!-- <div className="modal-footer sticky-bottom"></div> --> */}
-                                    &copy; E-Shop 
-                                </div>
+                                    {/* &copy; E-Shop  */}
+                                {/* </div> */}
                         
                                 </div>
                             </div>

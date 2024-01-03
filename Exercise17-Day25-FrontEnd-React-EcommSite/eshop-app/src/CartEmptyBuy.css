@@ -1,0 +1,7 @@
+/* Hover effect for outline button */
+.button-outline-light:hover {
+    color: #fff; /* Change text color on hover to white */
+    background-color: #007bff; /* Change background color on hover to a desired color */
+    border-color: #fff; /* Change border color on hover to a desired color */
+    transition: all 0.3s ease; /* Add a smooth transition effect */
+  }

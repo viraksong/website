@@ -1,24 +1,27 @@
 import { Link } from "react-router-dom";
+import NewStatus from "./NewStatus";
+import AddCart from "./AddCart";
 
 const Item = (props) => {
     
     let myImg=`img/${props.kImag}`;
     console.log(myImg);
-    let show="";
+    // let show="";
     
-    if (props.kStatus!==""){
-        show=(  
-            <span className="position-absolute top-0 start-0 badge rounded-pill bg-danger">
-                    {props.kStatus}!
-            </span>
-        );
-    }
+    // if (props.kStatus!==""){
+    //     show=(  
+    //         <span className="position-absolute top-0 start-0 badge rounded-pill bg-danger">
+    //                 {props.kStatus}!
+    //         </span>
+    //     );
+    // }
 
     return ( 
+        
         <div className="col">
             <div className="card h-100">
                 <img src={myImg} className="card-img-top" alt="Skyscrapers"/>
-                {show}
+                {<NewStatus status={props.kStatus}/>}
                 <div className="card-body">
                 <h5 className="card-title">props.kName</h5>
                 <p className="card-text">
@@ -26,7 +29,8 @@ const Item = (props) => {
                 </p>
                 </div>
                 <span className="text-end">
-                <Link to="#" className="btn btn-primary rounded-pill btn-lg">Buy</Link>             
+                {/* <Link to="#" className="btn btn-primary rounded-pill btn-lg">Buy</Link>   */}
+                <AddCart/>
                 </span>
                 <span className="text-center">{props.kDes}</span>
                 <div className="card-footer">

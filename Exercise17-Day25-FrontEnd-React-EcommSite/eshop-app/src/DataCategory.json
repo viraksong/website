@@ -1,0 +1,27 @@
+{
+  "categories": [
+    {
+      "name": "iMac",
+      "items": [
+        { "id": "im1", "proName": "iMac", "des": "Good for office", "status": "New", "price": 1299, "img": "mac-card-40-imac-24-202310.jpg" }
+      ]
+    },
+    {
+      "name": "MacBook",
+      "items": [
+        { "id": "m1", "proName": "MacBook Pro 16", "des": "Good for performance", "status": "New", "price": 1599, "img": "mac-card-40-macbookpro-14-16-202310_GEO_US.jpg" },
+        { "id": "m2", "proName": "MacBook Air 15\" with M2 Chip", "des": "Good for professional", "status": "", "price": 1199, "img": "mac-card-40-macbook-air-13-15-202306.jpg" },
+        { "id": "m3", "proName": "MacBook Air 13\" with M1 chip", "des": "Good for students", "status": "", "price": 999, "img": "mac-card-40-macbook-air-202110.jpg" }
+      ]
+    },
+    {
+      "name": "iPaid",
+      "items": [
+        { "id": "ip1", "proName": "iPad Pro", "des": "Good for performance", "status": "New", "price": 1299, "img": "ipad-card-40-pro-202210.jpg" },
+        { "id": "ip2", "proName": "iPaid Air", "des": "Good for adult", "status": "New", "price": 599, "img": "ipad-card-40-air-202203.jpg" },
+        {"id":"ip3","proName":"iPad","des":"Good for children", "status":"","price":499,"img":"ipad-card-40-ipad-202210.jpg"},
+        {"id":"ip4","proName":"iPad","des":"Good for senior", "status":"","price":329,"img":"ipad-card-40-ipad-202109.jpg"}
+      ]
+    }
+  ]
+}
